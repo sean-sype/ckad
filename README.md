@@ -33,7 +33,7 @@
 ## Core Concepts
 - Kubernetes installs
     - api server
-        - acts as the front end, user commands, UI, 
+        - acts as the front end, user commands, UI, also delivers commands to the kube main node. 
     - etcd
         - distributed reliable key-value store used by kubernetes key value store, used by kuber, used to managed the cluster
         - implementing logs within the clusters
@@ -51,10 +51,10 @@
 - scale up create more pod, scale down, delete pods
 - multiple conitainers can live in a pod - helper containers 
 - `kubectl get pods` 
-- `kube run nginx --image nginx`
+- `kubectl run nginx --image nginx`
 
-## Yaml in Kubernetes - Pods
-- 
+## 13. Yaml in Kubernetes - Pods
+- Kubernetes definition file always contains four top level fields. The API version, kind, metadata and spec. These are the top level or root level properties.
 
 ## ReplicaSets
 - Replication controller ensures that a "x" number of pods are running at all time. It can restart a single pod and or manage multiple pods. 
